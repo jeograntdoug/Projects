@@ -1,0 +1,267 @@
+<!-- Restaurant Chipotle main page -->
+<!-- Pure HTML & CSS-->
+<!-- Script by : Heok -->
+<!-- Script Date : 2019. 10. 31 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link rel="stylesheet" type="text/css" href="Chipotle.css" />
+
+	<title>Chipotle Mexican Grill</title>
+</head>
+<body>
+	<!-- Top red bar/ Click to open(need Java Script) -->
+	<header>
+		<div class="topBanner">
+			<h3>TAP. EAT. EARN.</h3>
+
+			<!-- Arrow Button -->
+			<img src="./images/search-gray.svg" alt="Arrow" />
+		</div>
+
+		<!-- Dropdown contents-->
+		<div class="topDropDown">
+			<div>
+				<p>PICKUP.</p>
+				<p>DELIVERY.</p>
+				<p>REWARDS.</p>
+			</div>
+			<!-- App store links -->
+			<div>
+				<a href="#"><img src="./images/apple-store.png" alt="app store" /></a>
+				<a href="#"><img src="./images/google-play.png" alt="google play" /></a>
+			</div>
+			<div>
+				<!-- App picture -->
+				<img src="./images/group-4.jpg" alt="group-4" />
+			</div>
+		</div>
+	</header>
+
+	<!-- Top navigation -->
+	<nav>
+		<!-- Menu button for smal device -->
+		<div class="leftMenuButton">
+			<img src="./images/menu-left.svg" alt="menu" />
+		</div>
+
+		<!-- small device : hidden / hover->open full screen with different layout-->
+		<div class="logos">
+			<!-- Logo and close button(hidden) -->
+			<div class="leftMenuImg">
+				<img src="./images/cmg-medallion-logo.svg" width="45" height="45" alt="Logo" />
+				<img src="./images/close.svg" width="20" height="20" alt="close" />
+			</div>
+
+			<!-- Navigation menus /hover->underline effect with div.underLine-->
+			<div class="leftMenu">
+				<ul>
+					<li>
+						<a href="#">ORDER</a>
+						<div class="underLine"></div>
+					</li>
+					<li>
+						<a href="#">CATERING</a>
+						<div class="underLine"></div>
+					</li>
+					<li>
+						<a href="#">REWARDS</a>
+						<div class="underLine"></div>
+					</li>
+					<li>
+						<a href="#">OUR VALUES</a>
+						<div class="underLine"></div>
+					</li>
+					<li>
+						<a href="#">NUTRITION</a>
+						<div class="underLine"></div>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Restaurant's location around the address(link/google map) -->
+			<div class="findAChipotle">
+				<img src="./images/pepper-small-white@3x.png" width="27" height="27" alt="Pepper" />
+				|&nbsp;<span>FIND A CHIPOTLE</span>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Section (main story) -->
+	<section>
+		<!-- Section's header : main picture and 2 nav button -->
+		<header>
+			<!-- Instead of bg-image, use img element in html
+	to use image's height & make height of box responsible -->
+			<!-- To change image depending on device width -->
+			<img class="sectionHeaderImage" />
+
+			<div class="headerLinks">
+				<div>
+				<!-- Change text depending on device width -->
+				<!-- Use JavaScrip later-->
+					<a href="#">Get it delivered.</a>
+					<a href="#">Get delivery powered by DoorDash.</a>
+				</div>
+				<div>
+					<a href="#"> ORDER NOW </a> 
+					<img src="./images/arrow-icon.svg" alt="arrow" />
+				</div>
+			</div>
+		</header>
+
+		<!-- Navigation to show dishes of the restaurant -->
+		<nav>
+			<div>
+				<p>WHAT SHOULD I EAT IF I AM</p>
+				<form>
+					<select>
+						<!-- Place holder -->	
+						<option value="" hidden>SELECT ONE</option>
+						<option value="avoiding dairy">AVOIDING DAIRY</option>
+						<option value="avoiding fat">AVOIDING FAT</option>
+						<option value="counting calories">COUNTING CALORIES</option>
+						<option value="avoiding carbs">AVOIDING CARBS</option>
+						<option value="gluten free">GLUTEN FREE</option>
+						<option value="avoiding sodium">AVOIDING SODIUM</option>
+					</select>
+					<span>?</span>
+				</form>
+			</div>
+		</nav>
+
+		<!-- Container of articles -->
+		<div class="articlesContainer">
+			<article>
+				<!-- Event1 -->
+				<div class="article">
+					<!-- Article image -->
+					<div class="articleImg img1"></div>
+					<!-- Article text -->
+					<div class="textContainer">
+						<h2>UNWAP SOME FREE CHIPOTLE</h2>
+						<p>Join Chipotle Rewards to start earning points towards free Chipotle. Oh, and let’s just say…we won’t forget to celebrate you on your birthday.</p>
+					</div>
+
+					<!-- Link to detail page -->
+					<a href="#">JOIN NOW</a>
+				</div>
+
+				<!-- Event2 -->
+				<div class="article">
+					<!-- Article image -->
+					<div class="articleImg img2"></div>
+					<!-- Article text -->
+					<div class="textContainer">
+						<h2>GET A DEBT-FREE DEGREE</h2>
+						<p>We support our crew members from the kitchen to the classroom. Announcing 100% college tuition coverage for all eligible employees. The difference is real.</p>
+					</div>
+
+					<!-- Link to detail page -->
+					<a href="#">LEARN MORE</a>
+				</div>
+			</article>
+
+			<article>
+				<div class="forReal">
+					<!-- Article image -->
+					<img src="./images/for-real-chicken-bowl@2x.png" width="300"  alt="For real Chicken bowl" />
+					<p class="forRealText">GUACAMOLE</p>
+					<img src="./images/for-real.png" width="200" alt="For real" />
+					<!-- Article text -->
+					<p class="forRealText">We hand-mash our guacamole every day from scratch, using only Hass avocados, red onions, jalapeños, and cilantro. Then, we finish it off with a touch of salt and a dash of lime juice. For Real.</p>
+					<p class="forRealText">For Real Food. For Real Actions. For Real Change.</p>
+					<!-- Link to detail page -->
+					<a href="#">CHECK OUT OUR VALUES</a>
+				</div>
+			</article>
+
+			<article>
+				<!-- Event3 -->
+				<div class="article">
+					<div class="articleImg img3">
+						<!-- To make bg-image darker(dark shade) -->
+						<div class="imgDark"></div>
+						<p>GIFTS & GEAR</p>
+					</div>
+					<!-- Article text -->
+					<div class="textContainer">
+						<p>Give the people what they want more Chipotle. Shop our gift cards for any occasion worth celebrating, or pick up some not-edible-but-still-awesome Chipotle swag.</p>
+					</div>
+					<!-- Link to detail page -->
+					<a href="#">SHOP CHIPOTLE</a>
+				</div>
+
+				<!-- Event4 -->
+				<div class="article">
+					<div class="articleImg img4">
+						<!-- To make bg-image darker(dark shade) -->
+						<div class="imgDark"></div>
+						<p>FUNDRAISING</p>
+					</div>
+					<!-- Article text -->
+					<div class="textContainer">
+						<p>We do more than just roll burritos. Each of our restaurants is committed to supporting local groups like neighboring schools, youth sports teams and non-profit organzations.</p>
+					</div>
+					<!-- Link to detail page -->
+					<a href="#">GET FUNDRAISING INFO</a>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<!-- Start container class to keep width of contents -->
+		<nav>
+		<!-- Restaurant's location around the address(link/google map) -->
+			<div class="container">
+				<img class="footerNavImage" />
+				<p>FIND A CHIPOTLE</p>
+				<form method="get" action="">
+					<input 	type="text" 
+							name="address" 
+							id="address" 
+							placeholder="Enter City, State or Zip Code" 
+					/>
+				</form>
+			</div>
+		</nav>
+		
+		<!-- Start container class to keep width of contents -->
+		<!-- Footer Links-->
+		<div class="container">
+			<section>
+				<div>
+					<a href="#">CONTACT SUPPORT</a>
+					<div class="underLine"></div>
+				</div>
+				<div>
+					<a href="#">CARRERS</a>
+					<div class="underLine"></div>
+				</div>
+				<div>
+					<a href="#">GIFT CARDS</a>
+					<div class="underLine"></div>
+				</div>
+			</section>
+		
+			<p>CONNECT WITH US</p>
+
+			<!-- Social network images-->
+			<div>
+				<img src="./images/facebook.png" width="40" height="40" alt="facebook" />
+				<img src="./images/insta.png" width="40" height="40" alt="insta" />
+				<img src="./images/twitter.png" width="40" height="40" alt="twitter.png" />
+			</div>
+		</div>
+		<!-- End of container class -->
+	</footer>
+</body>
+</html>
+

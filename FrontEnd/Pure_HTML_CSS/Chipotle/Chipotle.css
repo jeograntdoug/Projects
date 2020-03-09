@@ -1,0 +1,707 @@
+@charset "utf-8";
+
+/* CSS file for Chipotle.html
+ * Pure HTML & CSS
+ * Script by : Heok
+ * Script date : 2019. 10.31
+ */
+
+/* Make block element's width = content width + padding + border */
+
+*{
+	box-sizing : border-box;
+}
+
+/* Initialize basic elements */
+body,h1,h2,h3,h4,h5,h6,p,ul{
+	padding : 0;
+	margin : 0;
+}
+body {
+	font-family : arial;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration : none;
+	color : inherit;
+}
+img{
+	max-width : 100%;
+}
+
+/* Menu underLine effect */
+div.underLine{
+	margin-top : 5px;
+	transition-duration : 0.3s;
+	transition-property : width;
+	width : 0;
+	border: 2px solid white;
+}
+	
+a:hover~.underLine{
+	width : 50px;
+	border: 2px solid black;
+}
+/* Styling header of webpage */
+body>header {
+	background-color : brown;
+	color : white;
+}
+body>header div.topBanner {
+	padding : 20px;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+}
+div.topBanner img {
+	padding : 5px;
+	margin-left : 20px;
+	border-radius : 50%;
+	background-color : black;
+	cursor : pointer;
+}
+body>header div.topDropDown {
+	display : block;
+	background-color : white;
+	text-align : center;
+	font-size : 2em;
+	font-weight : bold;
+	color : brown;
+}
+div.topDropDown p{
+	margin-bottom : 10px;
+}
+div.topDropDown div {
+	padding-top: 25px;
+}
+
+/* Letters */
+div.topDropDown>div:nth-child(1) {
+	display : inline-block;
+	text-align : left;
+}
+
+/* google play and apple store images block */
+div.topDropDown>div:nth-child(2) {
+	border-top: 1px solid lightgray;
+}
+
+/*WIP*DropDown doesn't work!!!! ==> need Java Script*/
+.topBanner>img:hover .topDropDown{
+	display : block;
+}	
+
+/* Navigation bar */
+body>nav {
+	padding : 0.3em;
+	position : sticky;
+	top : 0;
+	display : flex;
+	align-items : center;
+	background-color : white;
+	z-index : 1;
+}
+body>nav>div>img{
+	margin-right: 0.5em;
+}
+
+/* Disapear */
+/** Menu elements ,Close image for leftMenu*/
+div.logos div.leftMenu, 
+.leftMenuImg>img[alt="close"]{
+	display : none;
+}
+
+body>nav div.logos{
+	display : flex;
+	justify-content : space-between;
+	align-items : center;
+	width : 100%;
+}
+div.logos div.findAChipotle{
+	display :flex;
+	align-items : center;
+	padding : 3px 15px 3px 5px;
+	border-radius : 10%/ 50%;	/* Round border */
+	background-color :black;
+	color : white;
+	letter-spacing : 1px;
+	font-size : 10px;
+}
+
+/* Left menu on hovering */
+/** Change the layout */
+/*** Full screen left menu */
+.leftMenuButton:hover~.logos{
+	padding-bottom : 30px;
+	display : initial; 	/* Remove flex display to arrange menus as column*/
+	position : fixed;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	overflow-y : scroll;/*Fixed position makes scrollable for small devices*/
+	width : 100%;
+	background-color : white;
+	z-index : 2;
+}
+
+/*** Place logo and close image */
+.leftMenuButton:hover~.logos>.leftMenuImg{
+	padding : 13px 40px;
+	border-bottom : 1px solid lightgray;
+	display :flex;
+	justify-content : space-between;
+	align-items : center;
+	
+}
+
+/*** Close image appear */
+.leftMenuButton:hover~.logos>.leftMenuImg>img{
+	display : block;
+}
+
+/*** Styling Menu elements (appear, font...) */
+.leftMenuButton:hover~.logos>.leftMenu{
+	padding : 40px 40px 0 40px;
+	display : block;
+	font-size : 2.5em;
+	font-weight : bold;
+}
+
+/*** Margin menus */
+.leftMenuButton:hover~.logos>.leftMenu li{
+	margin-bottom : 30px;
+}
+.leftMenuButton:hover~.logos>.findAChipotle{
+	width : 190px;
+	margin : 0 auto;
+	padding : 7px 5px;
+	font-size : 1.4em;
+}
+.leftMenuButton:hover~.logos>.findAChipotle>span{
+	font-weight : bold;
+	font-size : 13px;
+}
+/* End of left menu stying */
+
+
+/* Styling section*/
+
+/** Section header */
+/** Image and 2 links */
+/*** header background without contents position relative for Links follow */
+
+section header{
+	position : relative;
+}
+
+/*** Instead of bg-image, use img element in html
+	to use image's height & make height of box responsible */
+
+section header img.sectionHeaderImage{
+	content : url("./images/640x802-Home-Page-Hero-Mobile-Carne-Asada 10-4-2019 Update.jpg");
+	width : 100%;
+}
+
+/*** Links position absolute */
+section header>div.headerLinks{
+	display : flex;
+	position : absolute;
+	left : 50%;
+	bottom : 70px;
+	transform : translate(-50%,-15%);
+	width : 95%;
+	color : white;
+}
+div.headerLinks div{
+	flex: auto;
+	display : flex;
+	justify-content : center;
+	align-items : center;
+	padding : 15px 0;
+}
+div.headerLinks div:first-child{
+	background-color : tomato;
+}	
+
+/* For link text change */
+div.headerLinks div:first-of-type a:nth-of-type(2){
+	display : none;
+}
+
+div.headerLinks div:last-child{
+	background-color : red;
+}
+
+/** Section nav **/
+/*** Selection and Order */
+
+section nav{
+	padding : 35px 30px;
+	border-bottom : 1px solid lightgray;
+	background-image : url("./images/background-image-what-should-i-eat@3x_cropped.png");
+	background-repeat : no-repeat;
+	background-size : cover;
+	height : 135px;
+}
+section nav div{
+	margin : 0 auto;
+	padding : 7px 0;
+	/* Fixed article width in larger screen 
+		& align center */
+	max-width : 575px;
+	font-weight : bold;
+	font-size : 1.2em;
+	line-height : 1.4em;
+	background-color : white;
+}
+
+/*** Select and options */
+/*** Can't style options except for color,bg-color */
+
+section nav div form{
+	display : flex;
+}
+section nav div form select{
+	border : none;
+	border-bottom : 1px solid black;
+	outline : none;
+	width : 100%;
+	font-size : 1.1em;
+	color : gold;
+}
+
+/** Section article */
+section div.articlesContainer{
+	/* Fixed article width in larger screen 
+		& align center */
+	max-width : 575px;
+	margin : 0 auto;
+	padding : 0 15px;
+}
+
+section article{
+	margin : 15px;
+}
+section article img{
+	max-width : 100%;
+}
+article div.article{
+	border : 1px solid lightgray;
+	margin-bottom : 30px;
+}
+
+/** Event article elements(image/text/link) line up */
+article:first-child>div.article,
+article:last-child>div.article{
+	display : grid;
+	align-content : space-between;
+}
+
+/** Article images */
+/*** Common styling for articles image */
+div.article .articleImg{
+	background-repeat : no-repeat;
+	background-position : center center;
+	background-size : cover;
+}
+/*** Specific styling for articles image */
+div.article .img1{
+	background-image : url("./images/Home-Page-Secondary-Tout-Mobile@2x.jpg");
+	height : 158px;
+}
+div.article .img2{
+	background-image : url("./images/580x310-SecondaryTout-MOBILE-DebtFreeCollege.jpg");
+	height : 158px;
+}
+div.article .img3{
+	position : relative;
+	background-image : url("./images/GiftCards_1140x376.jpg");
+	height : 187px;
+}
+div.article .img4{
+	position : relative;
+	background-image : url("./images/group-12@2x.png");
+	height : 187px;
+}
+
+/*** Darken image by adding additional layer on it */
+.img3 .imgDark,
+.img4 .imgDark{
+	height : 100%;
+	background-color : black;
+	opacity : 0.4;
+}
+
+/*** Message on the image in article */
+.img3 p ,
+.img4 p{
+	position : absolute;
+	top : 50%;
+	transform : translateY(-50%);
+	width : 100%;
+	font-size : 2em;
+	font-weight : bold;
+	text-align : center;
+	color : white;
+}
+
+article div div.textContainer{
+	padding : 25px;
+}
+div.textContainer h2{
+	margin-bottom : 20px;
+}
+
+div.textContainer p{
+	font-size : 0.8em;
+	line-height : 1.6em;
+}	
+
+article>div>a{
+	margin : 0 auto 20px;
+	padding : 10px;
+	display : block;
+	width : 90%;
+	text-align : center;
+	font-size : 0.9em;
+	font-weight : bold;
+	background-color : brown;
+	color : white;
+}
+
+/** Article forReal */
+article div.forReal img{
+	margin : 0 auto;
+	display:  block;
+}
+article div.forReal p{
+	text-align : center;
+}
+
+/*** nth-of-type : only specific type count*/
+div.forReal p.forRealText:nth-of-type(1){
+	margin-bottom : -7px;	/* negative margin */
+	font-size : 2.2em;
+	font-weight : bold;
+}
+div.forReal p.forRealText:nth-of-type(2){
+	margin-top : 50px;
+	margin-bottom : 20px;
+	font-size : 0.9em;
+	font-weight : bold;
+	line-height : 1.5em;
+}
+div.forReal p.forRealText:nth-of-type(3){
+	margin-bottom : 40px;
+}
+
+/** Overwrite a in the article */
+div.forReal>a{
+	border : 2px solid brown;
+	background-color : white;
+	color : brown;
+	width : 100%;
+}
+
+/* footer : location, sub links */
+footer div.container {
+	padding : 15px;
+}
+
+/** Location */
+footer nav{
+	background-color : darkgray;
+	color : white;
+}
+
+/** Image space disappear */
+footer nav img.footerNavImage{
+	display : none;
+}
+footer nav p{
+	margin-bottom : 20px;
+	font-size : 0.9em;
+	font-weight : bold;
+}
+
+/*** footer Input Styling */
+footer nav input[type="text"]{
+	padding-bottom : 5px;
+	border : none;
+	border-bottom : 1px solid white;
+	outline : none;
+	width : 100%;
+	font-size : 1em;
+	font-weight : bold;
+	background-color : transparent;
+	background-image : url("./images/cross-circle-gray.svg");
+	background-repeat : no-repeat;
+	background-position : right; 
+	color : white;
+}
+
+/* Change image when user type something in input */
+footer nav input[type="text"]:placeholder-shown{
+	background-image : url("./images/search-gray.svg");
+}
+
+/* Placeholder styling*/
+footer nav input::placeholder{
+	color : white;
+}
+
+/* Sub links */
+footer{
+	background-color : black;
+	color : white;
+}
+footer a{
+	display : inline-block;
+	font-size : 1.5em;
+}
+
+/** Social media images*/
+footer div img{
+	margin-right : 15px;
+}
+
+footer section>div,
+footer section~p{
+	margin-bottom : 15px;
+}
+
+footer div.underLine{
+	border: 2px solid black;
+}
+footer a:hover~.underLine{
+	width : 50px;
+	border: 2px solid white;
+}
+
+/* Break point 575px,765px, 993px */
+/** 575px break point */
+/*** 1.section header's nav fixed width */
+/*** 2.Fixed article width */
+
+@media screen and (min-width : 575px){
+
+	/*** 1.section header's nav fixed width */
+	section header div.headerLinks{
+		width : 300px;
+	}
+
+	/*** 2.Fixed article width 
+		==> above in the section div.articlesContainer */
+}
+
+/** 690px break point */
+/*** 1.Section header's bg change */
+/*** 2.Section header's nav fixed & wider width */
+/*** 3.Change fixed article and its container width */
+/*** 4.2 articles in a row */
+/*** 5.Footer nav : add little map image */
+
+@media screen and (min-width : 690px){
+
+	/*** 1. Section header's bg change */
+
+	section header img.sectionHeaderImage {
+		content: url("./images/2800x1358-Home-Page-Hero-Desktop-National-Carne-Asada 10-4-2019 Update.jpg");
+	}
+
+	/*** 2.Section header's nav fixed & wider width */
+	section header div.headerLinks{
+		width : 400px;
+		font-size : 0.9em;
+	}
+	div.headerLinks>div:first-of-type a:first-of-type{
+		display : none;
+	}
+	div.headerLinks>div:first-of-type a:nth-of-type(2){
+		display : initial;
+	}
+
+	/*** 3.Change fixed article and its container width */
+	section nav div,
+	section div.articlesContainer,
+	footer div.container{
+		max-width : 690px;
+		margin: 0 auto;
+	}
+	/*** Set forReal image size*/
+	article div.forReal img:first-of-type{
+		width : 600px;
+	}
+	article div.forReal img:last-of-type{
+	}
+	div.forReal p.forRealText:nth-of-type(1){
+		font-size : 4em;
+	}
+
+	/*** 4. Set articles(Events articles) in a row */
+	section article {
+		margin-bottom : 40px;
+	}
+	section article:first-child,
+	section article:last-child{
+		display : grid;
+		grid-template-columns : auto auto;
+		grid-column-gap : 50px;
+	}
+	article:first-child>div.article,
+	article:last-child>div.article{
+		margin-bottom : 0;
+	}
+
+	/*** 5.Footer nav : rearrange and add little map image */
+	
+	footer nav div.container {
+		display : flex;
+		align-items : center;
+	}
+	footer nav div.container>p{
+		margin : 0 30px;
+		padding : 0;
+		white-space : nowrap;
+	}
+	div.container img.footerNavImage{
+		display : initial;
+		content : url("./images/map@3x.png");
+		width : 50px;
+		margin : 0;
+	}
+	div.container form{
+		width : 50%;
+	}
+}
+
+
+/** 993px break point */
+/*** 1.Top navigation appear / left menu button disappear */
+/*** 2.Some element's heights are larger*/
+/*** 3.Section header's links fixed & wider width */
+/*** 4.articles : wider , (some articles)rearrange pic and text */
+@media screen and (min-width: 993px){
+
+/*** 1.Top navigation appear / left menu button disappear */
+	body>nav{
+		padding-left : 20px;
+		padding-right : 20px;
+	}
+	nav div.leftMenuButton{
+		display : none;
+	}
+	/* Nav menu to the top*/
+	nav div.logos div.leftMenu{
+		display : block;
+	}
+	nav div.logos div.findAChipotle{
+		font-size : 15px;
+	}	
+	nav div.logos div.leftMenuImg img[src="./images/cmg-medallion-logo.svg"]{
+		width : 80px;
+		height : 80px;
+	}
+	div.leftMenu ul li{
+		display : inline-block;
+		font-size : 1.3em;
+		font-weight : bold;
+	}
+	div.leftMenu ul li a{
+		padding-right : 10px;
+		display : block;
+	}
+	div.leftMenu ul li div{
+	}
+	div.leftMenu ul li a:hover{
+		color : brown;
+	}
+	div.leftMenu ul li a:hover~.underLine{
+		width : 25px;
+		border: 1px solid black;
+	}
+
+	/*** 3.Section header's links fixed & wider width */
+	section header div.headerLinks{
+		width : 700px;
+		font-size : 1.5em;
+		bottom : 90px;
+	}
+
+	/*** 4.articles : wider , (some articles)rearrange pic and text */
+	section nav div,
+	section div.articlesContainer,
+	footer div.container{
+		max-width : 993px;
+		margin: 0 auto;
+	}
+	/*** Styling Section nav*/
+	section nav {
+		padding-top : 70px;
+		padding-bottom : 70px;
+		margin-bottom : 70px;
+		font-size: 2em;
+		height : auto;
+	}
+	section nav div p{
+		font-size : 1.2em;
+		text-align : center;
+	}
+	section nav div form{
+		margin : 0 auto;
+		width : fit-content;
+	}
+	section nav div form select {
+		border-bottom : 4px solid black;
+	}
+
+	/*** Styling article layout*/
+	section article {
+		margin-bottom : 70px;
+	}
+
+	/** Event article elements(image/text/link)*/
+	article:first-child>div.article{
+		display : grid;
+		grid-template-columns : 1fr 1fr;
+		grid-template-rows : 1fr auto;
+	}
+	div.article .img1,
+	div.article .img2 {
+		height : 100%;
+		grid-column : 2/3;
+		grid-row: 1/3;
+	}
+	div.article .img1{
+		background-image : url("./images/Home-Page-Secondary-Tout-Desktop@2x.jpg");
+	}
+	div.article .img2{
+		background-image : url("./images/570x770-SecondaryTout-DESKTOP-DebtFreeCollege.jpg");
+	}
+
+	article:first-child>div.article>div.textContainer {
+		grid-column : 1/2;
+		grid-row : 1/2;
+	}
+	article:first-child>div.article>a{
+		grid-column : 1/2;
+		grid-row : 2/3;
+	}
+	
+	/*** forReal link size */
+	div.forReal>a{
+		width : 280px;
+	}
+}
+
+@media screen and (min-width : 1200px){
+	section nav div,
+	section div.articlesContainer,
+	footer div.container{
+		max-width : 1160px;
+	}
+
+}

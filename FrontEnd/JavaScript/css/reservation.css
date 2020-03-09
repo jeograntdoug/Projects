@@ -1,0 +1,20 @@
+#calDiv{
+	border-collapse: collapse;
+}
+#calDiv>div {
+	border: 1px solid black;
+	height: 200px;
+}
+td>p{
+	text-align: center;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+td:hover {
+	outline: 2px solid gray;
+	cursor: pointer;
+}
+#resvContainer {
+	margin-top: 100px;
+}

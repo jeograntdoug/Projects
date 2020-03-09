@@ -1,0 +1,11 @@
+Currie;1968-11-12;Garden;Tuesday,Wednesday,Thursday,Friday,Saturday
+Hynda;2010-7-20;Jewelery;Tuesday,Wednesday,Thursday,Friday,Saturday
+Ky*;2014-4-10;Books;Monday,Tuesday,Wednesday
+Larissa*;2100-10-1;Tools;Monday,Tuesday,Wednesday,Thursday
+Lita;1951-3-18;Sports;Tuesday,Wednesday,Thursday,Friday,Saturday
+Mabel*;2057-9-3;Music;Wednesday,Thursday,Friday,Saturday
+Nicoli*;2089-8-23;Outdoors;Sunday,Monday,Tuesday,Wednesday
+Norah;2096-5-6;Health;Sunday,Monday,Tuesday,Wednesday
+Phylys;2079-7-22;Books;Tuesday,Wednesday,Thursday,Friday,Saturday
+Verla;2033-3-24;Industrial;Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+hahaha;2020-3-3;Food;Monday,Wednesday,Friday,Saturday

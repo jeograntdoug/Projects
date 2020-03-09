@@ -1,0 +1,15 @@
+Norah;2096-05-06;Health;Sunday,Monday,Tuesday,Wednesday
+Mabel*;2057-09-03;Music;Wednesday,Thursday,Friday,Saturday
+Verla;2033-03-24;Industrial;Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+Cathrin;2032-12-12;Clothing;
+Nicoli*;2089-08-23;Outdoors;Sunday,Monday,Tuesday,Wednesday
+Konrad;2017-11-01;Garden;
+Larissa*;2100-10-01;Tools;Wednesday,Thursday,Friday,Saturday
+Lita;1951-03-18;Sports;Tuesday,Wednesday,Thursday,Friday,Saturday
+Phylys;2079-07-22;Books;Tuesday,Wednesday,Thursday,Friday,Saturday
+Ky*;2014-04-10;Books;Monday,Tuesday,Wednesday
+Hynda;2010-07-20;Jewelery;Tuesday,Wednesday,Thursday,Friday,Saturday
+Wiatt*;2003-06-13,Baby;
+Currie;1968-11-12;Garden;Tuesday,Wednesday,Thursday,Friday,Saturday
+Peter;2137-03-22;Books;Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday
+Zebulen;2128-06-08;Music;Thursday

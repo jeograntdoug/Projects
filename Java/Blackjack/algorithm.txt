@@ -1,0 +1,25 @@
+/** Algorithm for blackJack game */
+
+//Player/Card/Rule/Dealer
+
+/*
+step1. Player starts game
+step2. Dealer throws the card
+step3. If Dealer or Player is 21 points blackjack,
+	step4. stop Playing. 
+	step5. if not, continues.
+
+step6. If Player or dealer burstied, loses 
+	go to step 10
+step7. If Dealer is geater than point 17, stop 
+	go to step 10
+step8. If Player decide stop 
+	go to step 10
+step9. Get more card
+
+step10. Repeat step6~9
+
+step11. compare cards to dealer's
+step12. Print winner
+
+

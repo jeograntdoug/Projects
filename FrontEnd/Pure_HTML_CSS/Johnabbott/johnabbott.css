@@ -1,0 +1,333 @@
+@charset "utf-8";
+
+* {
+	box-sizing : border-box;
+}
+body {
+	margin : 0;
+	padding : 0;
+	font-family : arial;
+}
+p, h1, h2, h3, h4, h5, h6, ul, li {
+	padding : 0;
+	margin : 0;
+}
+
+/*Header styling : Jac Logo and text*/
+/*menu needed to add*/
+header {
+	padding-top : 1em;
+	padding-bottom : 2em;
+	text-align : center;
+	background-color : blue;
+	color : white;
+}
+header div.topPortal{
+	display : none;
+	margin-bottom : 10px;
+}
+header div.topPortal form{
+	display : flex;
+	justify-content : center;
+	align-items : center;
+
+}
+header div.topPortal form a {
+	padding : 0 5px ;
+	border-right: 1px solid white;
+	font-size : 0.6em;
+	font-weight : bold;
+	text-decoration : none;
+	color : white;
+}
+header div.topPortal input {
+	margin-left : 40px;
+	font-size : 0.5em;
+	width : 100px;
+}
+
+header div.logo {
+	padding : 0 2em;
+}
+/* button to open sideNav */
+div.buttonContainer {
+	display : inline-block;
+	position : absolute;
+	top : 10px;
+	left : 10px;
+	cursor : pointer;
+}
+.bar1, .bar2, .bar3 {
+	width : 35px;
+	height : 5px;
+	background-color : #fff;
+	margin : 6px 0;
+	transition : 0.4s;
+}
+div.sideNavButton:hover .bar1 {
+	transform : rotate(-45deg) translate(-9px,6px);
+}
+div.sideNavButton:hover .bar2 {
+	opacity : 0;
+}
+div.sideNavButton:hover .bar3 {
+	transform : rotate(45deg) translate(-8px,-8px);
+}
+div.sideNavButton:hover nav.sideNav {
+	display : block;
+}
+div.sideNavButton:hover .buttonContainer {
+	transition : 1s;
+	left : 75%;
+	z-index : 2;
+}
+div.sideNavButton a.button:hover nav.sideNav{
+}
+
+/* top nav styling */
+nav.sideNav {
+	display : none;
+	position : fixed;
+	top : 0;
+	left : 0;
+	width : 75%;
+	height : 100%;
+	background-color : black;
+	color : white;
+}
+nav.sideNav ul {
+	list-style-type : none;
+	margin: 0; 
+	padding : 0;
+}
+nav.sideNav > ul > li > a[href="#5"]{
+	display : none;
+}
+nav.sideNav > ul > li > a{
+	display : block;
+	padding : 12px 35px;
+	text-decoration : none;
+	color : white;
+	font-size : 0.8em;
+}
+nav.sideNav > ul > li > a:hover {
+	background-color : gray;
+}
+/* Section styling :Page name and articles*/
+section {
+	padding-left : 22px;
+	padding-right : 22px;
+	margin-bottom : 5px;  
+}
+
+div.sectionHeader{
+	padding-top : 3em;
+	padding-bottom : 3em;
+	padding-left : 22px;
+
+	background-color : gray;
+	color : white;
+}
+section p {
+	padding : 1em 0;
+	font-size : 0.9em;
+	line-height: 1.6em;
+}
+section div.articleContainer > p{
+	font-size : 1.6em;
+}
+article {
+	margin-bottom : 20px;
+}
+article h2 {
+	margin-bottom : 10px;
+	font-weight : normal;
+	text-decoration : underline;
+	color : blue;
+}
+
+/* General images size and align */
+article div{
+	text-align : center;
+}
+article img{
+	width : 280px;
+	height : 200px;
+}
+
+/* Library article images */
+article.library img:nth-of-type(1){
+	width : 280px;
+	height : 200px;
+	margin-right : 15px;
+}
+article.library img:nth-of-type(2){
+	width : 280px;
+	height : 400px;
+}
+
+/* Learning Centres list and img align */
+article.learningCentres ul{
+	margin-top : 20px;
+	margin-left : 22px;
+}
+article.learningCentres li{
+	padding : 5px 0;
+	font-size : 0.8em;
+}
+
+/* Bottom nav styling*/
+nav.bottomNav {
+	background-color : lightgray;
+}
+nav.bottomNav > div.bottomNavMenu {
+	padding : 20px 10px 0;
+	margin-bottom : 30px;
+	width : 100%;
+}
+nav.bottomNav h3 {
+	padding : 10px; 
+}
+nav.bottomNav a {
+	display : block;
+	padding : 3px 10px;
+	text-decoration : none;
+	font-size : 0.9em;
+	color : gray;
+}
+nav.bottomNav a:hover{
+	background-color : white;
+}
+nav.bottomNav .navImage {
+	/*To get rid of padding bottom of nav*/
+	width : 100%;
+	height : auto;
+	margin-bottom : -3px;  
+}
+
+footer {
+	overflow : auto;
+	background-color : gray;
+	color : white;
+}
+footer div.followUs{
+	background-color : blue;
+	color : white;
+	font-size : 2rem;
+	font-weight : bold;
+}
+footer div.followUsContainer {
+	overflow : auto;
+	display : flex;
+	align-items : center;
+	padding : 15px 5px;
+}
+footer div.followUsContainer span{
+	width : 40%;
+}
+footer div.icons {
+	display : flex;
+	justify-content : center;
+	padding : 0;
+	width : 60%;
+}
+footer div.icons a{
+	margin : 0 5px;
+}
+footer a {
+	display : block;
+	text-decoration : none;
+	font-size : 0.8em;
+	color : white;
+}
+footer div.footerBottom{
+	padding : 20px;
+	line-height : 1.5em;
+}
+footer div.footerBottom > div{
+	float : left;
+	margin : 10px 20px;
+}
+footer div.footerLogo {
+	clear : both;
+	display : flex;
+	justify-content : space-between;
+	align-items: flex-end;
+	padding : 20px;
+	width : 100%;
+}
+
+@media screen and (min-width : 1030px){
+	header div.topPortal{
+		display : block;
+	}
+	header div.logo {
+		margin-left : auto;
+		margin-right : auto;
+		width : 1030px;
+		display : flex;
+		justify-content : space-between;
+		align-items : flex-end;
+	}
+	.sideNavButton .buttonContainer {
+		display : none;;
+	}
+	nav.sideNav > ul > li > a[href="#1"],
+	nav.sideNav > ul > li > a[href="#2"],
+	nav.sideNav > ul > li > a[href="#3"],
+	nav.sideNav > ul > li > a[href="#4"] {
+		display : none;
+	}
+	nav.sideNav {
+		display : block;
+		position : static;
+		text-align : center;
+		margin : 0 auto;
+		width : 1030px;
+		background-color : white;
+	}
+	nav.sideNav li{
+		display : inline-block;
+	}
+	nav.sideNav ul li a{
+		padding : 10px;
+		font-size : 1.5em;
+		color : black;
+	}
+	nav.sideNav ul li a:hover{
+		background-color : #ebeced;
+		text-decoration : underline;
+	}
+	div.sectionHeader{
+		padding-left : 0;
+	}
+	div.sectionHeader h2 {
+		padding-left : 22px;
+		margin : 0 auto;
+		width : 1030px;
+	}
+	section {
+		margin : 0 auto;
+		max-width : 1030px;
+	}
+	section div.sectionContainer{
+		display : grid;
+		grid-template-colums : 1fr 1fr 1fr;
+		grid-template-rows : auto;
+		grid-gap : 20px;
+	}
+	section div.sectionContainer .bottomNav {
+		grid-column : 1/2;
+		grid-row : 1;
+	}
+	section div.sectionContainer .articleContainer {
+		grid-column : 2/4;
+		grid-row : 1;
+	}
+	footer .followUsContainer ,
+	footer .footerBottom {
+		margin : 0 auto;
+		width : 1030px;
+	}
+
+}

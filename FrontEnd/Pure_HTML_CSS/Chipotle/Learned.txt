@@ -1,0 +1,16 @@
+1.CSS - Dropdown menu
+	: Dropdown content must be child of button
+
+2.after psuedo element it keep going to child or sibling
+	ex)	a:hover>.underLine == a:hover >.underLine
+	 	.leftMenuButton:hover ~.logos == .leftMenuButton:hover~.logos
+	**Do not use space for nothing in CSS
+
+3. doen't want to break the text line & make block size depend on text length
+	: white-space : nowrap;
+	ex) Chipotle.css line 525 
+		footer nav>p{
+			margin : 0;
+			padding : 0;
+			white-space : nowrap;
+		}
