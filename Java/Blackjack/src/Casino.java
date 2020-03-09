@@ -1,5 +1,7 @@
 /* Blackjack.java
  *  Rule for blackjack
+ *  Developed by : Donghyeok Seo
+ *  Date : 2019. 11. 11
  */
 //Import Scanner class
 import java.util.Scanner;
