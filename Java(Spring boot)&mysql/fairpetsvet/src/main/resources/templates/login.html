@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html data-layout-decorate="~{fragments/layout}">
+<head>
+    <!-- Required meta tags -->
+    <meta name="description" content="Fair Pets Vet Hospital Homepage, ">
+    <meta name="keywords" content="Vet, Veterinary, Pets, Fair Pets Vet, Products, Services, Reservations, Cats, Dogs, Birds, Staff, Doctor, Technician ">
+
+    <title>Fair Pets Vet | Welcome!</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.min.css"/>
+
+    <!-- login CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/login.css"/>
+
+</head>
+<body>
+
+<div data-layout-fragment="content" class="container-fluid" id="loginContainer" >
+    <div class="container">
+        <form class="loginForm" action="#" data-th-action="@{/login}" method="POST">
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" data-th-classappend ="${error}?'is-invalid':''" name="email" id="inputEmail" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="inputPassword">Password</label>
+                <input type="password" class="form-control" data-th-classappend ="${error}?'is-invalid':''" name="password" id="inputPassword" placeholder="Password" required>
+                <div class="invalid-feedback" data-th-text="${error}"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign in</button>
+            <a href="/signup">sign-up</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

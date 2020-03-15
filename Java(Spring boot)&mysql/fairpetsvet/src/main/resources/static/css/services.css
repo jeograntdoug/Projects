@@ -1,0 +1,110 @@
+<!-- Personal -->
+
+body,
+nav,
+div,
+h2,
+.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+
+div.pb_section {
+	height: 30%;
+	width: 100%;
+	background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 40%, #ffffff 95%), url(../images/services/DSC_2005.jpg) !important;
+	background-size: cover;
+}
+
+div.pb_section h2 {
+	margin-top: 85px;
+
+	font-family: 'Merriweather', Georgia, "Times New Roman", serif;
+	font-weight: 500;
+	font-size: 4rem;
+	letter-spacing: 5px;
+	line-height: 50vh;
+	text-shadow: 5px 5px 6px grey;
+}
+
+.serv-info-total {
+	line-height: 1.5em;
+}
+
+.dropdown {
+	position: relative;
+	margin-bottom: 20px;
+	/* display: inline-block; */
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 40%;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding: 12px 16px;
+	z-index: 2;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+#partener-servs{
+	color:darkgray; 
+	font-size:2.5rem;
+	margin-top:100px;
+}
+
+#bottom-row{
+	background-image: url('../images/services/bottom-dogs.PNG');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	width: 100%;
+	height: 10.84vw;
+}
+
+@media screen and (max-width: 990px) {
+	.dropdown h2 {
+		font-size: 1.5rem;
+	}
+
+	#top-text {
+		font-size: 3rem;
+	}
+
+	.row h1 {
+		font-size: 2rem;
+	}
+
+	.row h3 {
+		font-size: 1.5rem;
+	}
+
+	.dropdown-content {
+
+		font-size: 0.8rem;
+	}
+
+}
+
+@media screen and (max-width: 350px) {
+
+	.row h1 {
+		font-size: 1.5rem;
+	}
+
+	.row h3 {
+		font-size: 1.2rem;
+	}
+
+	.dropdown h2 {
+		font-size: 1.3rem;
+	}
+	#top-title{
+		font-size: 2rem;
+	}
+
+}
