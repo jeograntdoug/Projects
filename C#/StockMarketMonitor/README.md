@@ -9,7 +9,7 @@ Stock Market Monitor
 - Historical price candle chart
 - Multithreading
 
-* Main Responsible
+Main Responsible
 - Transaction at a target price
 - Watching List
 - Real-Time price line Chart
